@@ -1,4 +1,4 @@
-![Hero](_header_/hero.png)
+
  
 # Repository containing various Terraform code
  
@@ -10,7 +10,7 @@ Lots of Terraform recipes for doing things, aimed for copy and pasting into proj
  
 # Knowledge-as-code
  
-Terraform is an ideal knowledge transfer tool that can communicate the minutea of using certain technology combinations. We use this at [Futurice](https://futurice.com?source=terraform-examples) to disseminate hard won learnings across projects and industries, increasing the development velocity for all of our clients.
+Terraform is an ideal knowledge transfer tool that can communicate the minutea of using certain technology combinations. We use this at [futuriztik](https://futurice.com?source=terraform-examples) to disseminate hard won learnings across projects and industries, increasing the development velocity for all of our clients.
  
 # Read more about specific projects
  
@@ -345,9 +345,9 @@ resource "aws_ebs_volume" "my_data" {
 }
 
 module "my_host" {
-  # Available inputs: https://github.com/futurice/terraform-utils/tree/master/aws_ec2_ebs_docker_host#inputs
-  # Check for updates: https://github.com/futurice/terraform-utils/compare/v11.0...master
-  source = "git::ssh://git@github.com/futurice/terraform-utils.git//aws_ec2_ebs_docker_host?ref=v11.0"
+  # Available inputs: https://github.com/futuriztik/terraform-utils/tree/master/aws_ec2_ebs_docker_host#inputs
+  # Check for updates: https://github.com/futuriztik/terraform-utils/compare/v11.0...master
+  source = "git::ssh://git@github.com/futuriztik/terraform-utils.git//aws_ec2_ebs_docker_host?ref=v11.0"
 
   hostname             = "my-host"
   ssh_private_key_path = "~/.ssh/id_rsa"                # note that with a shared Terraform state, paths with "~" will become problematic
@@ -395,9 +395,9 @@ Assuming you have the [AWS provider](https://www.terraform.io/docs/providers/aws
 
 ```tf
 module "my_host" {
-  # Available inputs: https://github.com/futurice/terraform-utils/tree/master/aws_ec2_ebs_docker_host#inputs
-  # Check for updates: https://github.com/futurice/terraform-utils/compare/v11.0...master
-  source = "git::ssh://git@github.com/futurice/terraform-utils.git//aws_ec2_ebs_docker_host?ref=v11.0"
+  # Available inputs: https://github.com/futuriztik/terraform-utils/tree/master/aws_ec2_ebs_docker_host#inputs
+  # Check for updates: https://github.com/futuriztik/terraform-utils/compare/v11.0...master
+  source = "git::ssh://git@github.com/futuriztik/terraform-utils.git//aws_ec2_ebs_docker_host?ref=v11.0"
 
   hostname             = "my-docker-host"
   ssh_private_key_path = "~/.ssh/id_rsa"
